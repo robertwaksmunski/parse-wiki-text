@@ -2,7 +2,7 @@ use clap::Parser;
 use io::Read;
 use std::{fs, io};
 
-use parse_wiki_text_2::Configuration;
+use parse_wiki_text::Configuration;
 
 #[derive(Parser)]
 pub struct Args {

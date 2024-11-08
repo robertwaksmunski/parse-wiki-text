@@ -1,4 +1,4 @@
-use parse_wiki_text_2::{
+use parse_wiki_text::{
 	DefinitionListItem, ListItem, Node, Parameter, TableCaption, TableCell,
 	TableRow, Warning,
 };

@@ -2,7 +2,7 @@ mod to_test_str;
 
 use to_test_str::ToTestStr;
 
-use parse_wiki_text_2::Configuration;
+use parse_wiki_text::Configuration;
 use std::fs;
 
 struct Case {

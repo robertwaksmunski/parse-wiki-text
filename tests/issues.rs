@@ -1,6 +1,6 @@
 use std::time::Duration;
 
-use parse_wiki_text_2::{Configuration, ParseError};
+use parse_wiki_text::{Configuration, ParseError};
 
 const MAX_EXEC: Duration = Duration::from_millis(200);
 
