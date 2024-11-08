@@ -245,6 +245,10 @@ pub fn parse<'a>(
 		if !max_duration.is_zero() && loop_counter == 10_000 {
 			loop_counter = 0;
 			if start_time.elapsed() > max_duration {
+				while !state.wiki_text.is_char_boundary(state.scan_position) {
+					state.scan_position += 1;
+				}
+
 				state.flush(state.scan_position);
 
 				return Err(ParseError::TimedOut {
